@@ -1,33 +1,151 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Portfolio */
+.portfolio-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Modals */
+.modals-background {
+  background: #ffcc80;
+  height: 300px;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popup-modal {
+  padding-top: 1px;
 }
+
+/* Tictactoe Component Style */
+.board-square {
+  width: 90px;
+  height: 90px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 3px;
+  margin-left: 0px;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+}
+
+.gameover-display {
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  margin: 0 auto;
+  border: 5px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameover-display p {
+  color: black;
+  margin: 0;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 5px;
+}
+/* *******  END  ******* */
+
+/* Hangman Component Style */
+.hangman-wrapper {
+  display: flex;
+  padding: 15px;
+}
+
+.left-wrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-one {
+  width: 100%;
+  display: flex;
+
+  height: 20%;
+}
+
+.left-two {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.hangman-figure {
+  height: 50%;
+  width: 30%;
+}
+
+.balloon-img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.letter-placer {
+  border-bottom: 1px solid black;
+  display: flex;
+  width: 15px;
+  justify-content: center;
+  margin: 2px;
+}
+
+.right-wrapper {
+  width: 20%;
+}
+
+.correctletters-placer {
+  display: flex;
+  justify-content: space-around;
+  height: 25px;
+}
+
+.word-input {
+  display: flex;
+}
+
+.word-input .ant-input {
+  width: 200px;
+  margin: -2px 5px 0 5px;
+}
+
+.mistakes-wrapper {
+  display: flex;
+  text-align: center;
+  width: 30%;
+}
+
+.mistakes-text {
+  width: 85px;
+  height: 30px;
+  background: aquamarine;
+  color: black;
+}
+
+.alphabet-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 230px;
+}
+
+.letter {
+  width: 50px;
+}
+
+.alphabet-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* *******  END  ******* */
